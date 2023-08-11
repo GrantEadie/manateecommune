@@ -45,6 +45,9 @@ function Routes() {
 
 function RoutesMobile() {
   const [open, cycleOpen] = useCycle(false, true);
+  const handleOnClick = () => {
+    cycleOpen();
+  };
   return (
     <div className="z-10 md:hidden">
       <AnimatePresence>
@@ -66,7 +69,7 @@ function RoutesMobile() {
               <div className="flex flex-col h-full justify-end">
                 {routes.map((route, i) => (
                   <motion.div key={route} variants={itemVariants}>
-                    <Link href={`/${route}`} key={i} onClick={cycleOpen}>
+                    <Link href={`/${route}`} key={i} onClick={handleOnClick}>
                       <div className="--hover-social pb-24">{route}</div>
                     </Link>
                   </motion.div>
