@@ -12,12 +12,82 @@ body {
   background-color: var(--light);
 }
 
-.--hover {
+.--hover-img,
+.--hover-btn,
+.--hover-social {
   transition: all 0.25s ease;
   cursor: pointer;
 }
-.--hover:hover {
-  transform: translate(-3px, -3px);
+.--hover-img:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 77px -22px rgba(112, 112, 112, 0.5);
+}
 
-  box-shadow: 4px 4px 0px 0px rgba(80, 80, 80, .5);
+.--hover-btn:hover {
+  transform: translate(-2px, -2px);
+  opacity: 0.5;
+}
+
+.--hover-social:hover {
+  opacity: 0.3;
+}
+
+.--live-page {
+  min-height: calc(100vh - 176px - 208px);
+}
+
+#menu_checkbox {
+  display: none;
+}
+
+.burger label {
+  position: fixed;
+  top: 60px;
+  right: 18px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: -30px auto 0 auto;
+  cursor: pointer;
+}
+
+.burger label div {
+  position: relative;
+  top: 0;
+  height: 6px;
+  background-color: var(--dark);
+  margin-bottom: 12px;
+  transition: 0.2s ease transform, 0.2s ease top, 0.2s ease width,
+    0.2s ease right;
+}
+
+.burger label div:first-child {
+  transform-origin: 0;
+}
+
+.burger label div:last-child {
+  margin-bottom: 0;
+  transform-origin: 60px;
+}
+
+.burger label div:nth-child(2) {
+  right: 0;
+  width: 60px;
+}
+
+.burger #menu_checkbox:checked + label div:first-child {
+  top: -12px;
+  transform: rotateZ(45deg);
+}
+
+.burger #menu_checkbox:checked + label div:last-child {
+  top: 12px;
+  transform: rotateZ(45deg);
+}
+
+.burger #menu_checkbox:checked + label div:nth-child(2) {
+  width: 85px;
+  top: 0;
+  right: 13px;
+  transform: rotateZ(-45deg);
 }
