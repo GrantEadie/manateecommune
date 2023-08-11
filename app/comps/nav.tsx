@@ -70,7 +70,7 @@ function RoutesMobile() {
                 {routes.map((route, i) => (
                   <motion.div key={route} variants={itemVariants}>
                     <Link href={`/${route}`} key={i} onClick={handleOnClick}>
-                      <div className="--hover-social pb-24">{route}</div>
+                      <div className="--hover-social mb-24">{route}</div>
                     </Link>
                   </motion.div>
                 ))}
