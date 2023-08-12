@@ -4,12 +4,21 @@
 
 :root {
   --dark: #191919;
-  --light: rgb(245, 245, 245);
+  --light: rgb(255, 255, 255);
 }
 
 body {
   color: var(--dark);
   background-color: var(--light);
+}
+
+::selection {
+  background: var(--dark); /* WebKit/Blink Browsers */
+  color: var(--light);
+}
+::-moz-selection {
+  background: var(--dark); /* WebKit/Blink Browsers */
+  color: var(--light);
 }
 
 .--hover-img,
@@ -55,7 +64,9 @@ body {
   position: relative;
   top: 0;
   height: 6px;
-  background-color: var(--dark);
+  border-top: 1px solid var(--dark);
+  border-bottom: 1px solid var(--dark);
+  /* background-color: var(--dark); */
   margin-bottom: 12px;
   transition: 0.2s ease transform, 0.2s ease top, 0.2s ease width,
     0.2s ease right;

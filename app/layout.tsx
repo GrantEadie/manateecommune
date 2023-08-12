@@ -22,8 +22,8 @@ export default function RootLayout({
           <div className="py-10 flex flex-col items-center w-full">
             {children}
           </div>
-          <Footer />
         </div>
+        <Footer />
       </body>
     </html>
   );

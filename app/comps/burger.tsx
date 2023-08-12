@@ -14,7 +14,7 @@ export default function Burger({
         type="checkbox"
         id="menu_checkbox"
         checked={open}
-        onClick={onClick}
+        onChange={onClick}
       />
       <label htmlFor="menu_checkbox">
         <div></div>

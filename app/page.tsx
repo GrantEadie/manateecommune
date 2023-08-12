@@ -5,7 +5,7 @@ import { showData } from "./data/shows";
 export default function Home() {
   return (
     <div className="flex flex-col items-center">
-      <Releases />
+      <Releases displayNumber={2} />
       <div className="m-5" />
       <div className="w-full flex justify-center">
         <div className="xl:w-3/4 w-full">

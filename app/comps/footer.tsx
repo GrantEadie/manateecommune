@@ -3,7 +3,7 @@ import { FacebookLogo, InstagramLogo, SpotifyLogo } from "phosphor-react";
 
 export default function Footer() {
   return (
-    <div className="px-10 pb-20 pt-10 flex flex-col items-center">
+    <div className="pb-10 pt-10 flex flex-col items-center w-full ">
       <a
         href="https://www.instagram.com/manatee.commune/"
         className="--hover-social"
