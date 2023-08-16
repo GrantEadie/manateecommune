@@ -42,7 +42,7 @@ export default function Releases({ displayNumber }: { displayNumber: number }) {
             i < displayNumber && (
               <a key={i} href={url} target="_blank">
                 <div className="--hover-img">
-                  <Image src={img} alt="an album cover" />
+                  <Image src={img} alt="an album cover" placeholder="blur" />
                 </div>
               </a>
             )
