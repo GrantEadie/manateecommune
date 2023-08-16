@@ -17,7 +17,13 @@ export default function PersonPage() {
         Manatee Commune is Grant Eadie, born and raised in Spokane, Washington.
         <br />
         <br />
-        Although wildly inconsistent, he does love to make music.
+        Manatee Commune is the project of Grant Eadie, a multi-instrumentalist
+        in the Pacific Northwest. A small obsession for field recordings, a
+        foundation of classical training, and a fascination with the hypnosis of
+        dance lead Eadie and his music weaving from the ambient and downtempo
+        genres, to house and bass. Restful, detailed, childlike, meticulous, and
+        unfettered, Manatee Commune has become an icon among the PNW for the
+        liberated dance floor.
       </div>
     </div>
   );
