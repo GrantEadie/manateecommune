@@ -35,8 +35,8 @@ export const releasesData = [
 
 export default function Releases({ displayNumber }: { displayNumber: number }) {
   return (
-    <div className="flex flex-col items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sxl:w-3/4">
+    <div className="flex flex-col items-center justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sxl:w-3/4 xl:w-3/4 w-full">
         {releasesData.map(
           ({ img, url }, i) =>
             i < displayNumber && (
