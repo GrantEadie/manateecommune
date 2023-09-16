@@ -3,7 +3,7 @@ import manatee from "../../public/03a.jpg";
 
 export default function PersonPage() {
   return (
-    <div className="w-full xl:w-1/2 flex flex-col md:flex-row items-center justify-center">
+    <div className="w-full 2xl:w-1/2 flex flex-col md:flex-row items-center justify-center">
       <div className="relative text-white">
         <Image src={manatee} alt="grant eadie" placeholder="blur" />
         <a
@@ -13,7 +13,7 @@ export default function PersonPage() {
           by Paige McLaughlin
         </a>
       </div>
-      <div className="w-full lg:w-1/2 lg:px-10 py-10 text-sm">
+      <div className="w-full md:w-1/2 lg:px-10 py-10 text-sm">
         Manatee Commune is the project of Grant Eadie, a multi-instrumentalist
         in the Pacific Northwest.
         <br />

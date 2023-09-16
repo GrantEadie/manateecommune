@@ -4,6 +4,8 @@ import Link from "next/link";
 import { space } from "../fonts";
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 import Burger from "./burger";
+import manateeCommune from "../../public/manatee-commune.svg";
+import Image from "next/image";
 
 const routes = ["live", "releases", "person"];
 
@@ -93,7 +95,7 @@ export default function Nav() {
       <div className="xl:w-3/4 w-full flex items-end justify-between relative">
         <div className={`${space.className} text-5xl --hover-social`}>
           <Link href="/">
-            MANATEE <br /> COMMUNE
+            <Image src={manateeCommune} alt="svg" width="200" />
           </Link>
         </div>
         <div className="uppercase hidden md:flex">
