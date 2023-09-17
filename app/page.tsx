@@ -8,7 +8,7 @@ export default function Home() {
       <Releases displayNumber={2} />
       <div className="m-5" />
       <div className="w-full flex justify-center">
-        <div className="xl:w-3/4 w-full">
+        <div className="w-full">
           {showData.map(({ city, date, venue, lineup, url }, i) => (
             <Show
               city={city}

@@ -3,13 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --dark: #191919;
-  --light: rgb(255, 255, 255);
+  --dark: #1c1c1c;
+  --light: #fcfcfc;
 }
 
 body {
   color: var(--dark);
   background-color: var(--light);
+  font-weight: 900;
 }
 
 ::selection {
@@ -29,7 +30,7 @@ body {
 }
 .--hover-img:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 77px -22px rgba(112, 112, 112, 0.5);
+  box-shadow: 6px 6px 77px -22px #000000;
 }
 
 .--hover-btn:hover {

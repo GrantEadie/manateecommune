@@ -6,7 +6,7 @@ import { showData } from "../data/shows";
 export default function LivePage() {
   return (
     <div className="--live-page w-full flex flex-col items-center">
-      <div className="xl:w-3/4 w-full">
+      <div className="w-full">
         <div className="w-full relative h-96">
           <Image
             src={live}

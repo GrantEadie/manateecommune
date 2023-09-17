@@ -17,13 +17,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={overpass.className}>
-        <div className="md:p-10 p-5">
-          <Nav />
-          <div className="py-10 flex flex-col items-center w-full">
-            {children}
+        <div className="md:p-10 p-5 w-full flex flex-col items-center">
+          <div className="2xl:w-1/2 w-full">
+            <Nav />
+            <div className="py-10 flex flex-col items-center w-full">
+              {children}
+            </div>
           </div>
+          <Footer />
         </div>
-        <Footer />
       </body>
     </html>
   );

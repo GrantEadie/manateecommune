@@ -13,7 +13,7 @@ export default function Show({ date, venue, city, lineup, url }: ShowClass) {
     <a
       href={url}
       target="_blank"
-      className="flex justify-between items-center uppercase border border-gray-500 p-5 my-5 --hover-btn"
+      className="flex justify-between items-center uppercase border border-black border-2 p-5 my-5 --hover-btn"
     >
       <div>
         {moment(date).format("MM.DD.YY")}

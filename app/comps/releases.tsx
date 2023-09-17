@@ -42,7 +42,7 @@ export const releasesData = [
 export default function Releases({ displayNumber }: { displayNumber: number }) {
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sxl:w-3/4 xl:w-3/4 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
         {releasesData.map(
           ({ img, url, fresh }, i) =>
             i < displayNumber && (
@@ -50,8 +50,8 @@ export default function Releases({ displayNumber }: { displayNumber: number }) {
                 <div className="--hover-img relative">
                   <Image src={img} alt="an album cover" placeholder="blur" />
                   {fresh && (
-                    <div className="absolute left-0 bottom-0 px-4 py-3 text-white">
-                      New single out everywhere :)
+                    <div className="absolute left-0 bottom-0 px-3 py-1 text-white text-xs">
+                      new single out everywhere :)
                     </div>
                   )}
                 </div>

@@ -92,7 +92,7 @@ function RoutesMobile() {
 export default function Nav() {
   return (
     <div className="flex justify-center w-full">
-      <div className="xl:w-3/4 w-full flex items-end justify-between relative">
+      <div className="w-full flex items-end justify-between relative">
         <div className={`${space.className} text-5xl --hover-social`}>
           <Link href="/">
             <Image src={manateeCommune} alt="svg" width="200" />
