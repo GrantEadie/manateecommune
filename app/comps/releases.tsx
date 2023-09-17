@@ -1,6 +1,6 @@
 import Image from "next/image";
 import amaatOne from "../../public/amaat one cover.jpeg";
-import cast from "../../public/DlwjYab_.jpeg";
+import cast from "../../public/cast_artwork_reduced.jpeg";
 import crescentLake from "../../public/crescent_lake_cover.jpeg";
 import pda from "../../public/pda_artwork.jpeg";
 import unmastered from "../../public/unmastered_artwork.jpeg";
