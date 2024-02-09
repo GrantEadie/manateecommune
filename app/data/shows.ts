@@ -4,8 +4,8 @@ export const showData: ShowClass[] = [
   {
     city: "Seattle",
     venue: "Nectar Lounge",
-    date: "November 14, 2023",
-    lineup: "Gold Panda",
-    url: "https://www.tixr.com/groups/nectarlounge/events/gold-panda-plus-manatee-commune-dj-set--74337",
+    date: "April 20, 2024",
+    lineup: "Dan Deacon",
+    url: "https://www.tixr.com/groups/nectarlounge/events/dan-deacon-plus-manatee-commune-dj-set-b-ank-and-juliette-92936",
   },
 ];

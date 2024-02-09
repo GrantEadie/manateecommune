@@ -1,6 +1,7 @@
 import Image from "next/image";
 import amaatOne from "../../public/amaat one cover.jpeg";
 import cast from "../../public/cast_artwork_reduced.jpeg";
+import path from "../../public/path.jpeg";
 import crescentLake from "../../public/crescent_lake_cover.jpeg";
 import pda from "../../public/pda_artwork.jpeg";
 import unmastered from "../../public/unmastered_artwork.jpeg";
@@ -9,9 +10,13 @@ import thistle from "../../public/thistle_album_art.jpeg";
 
 export const releasesData = [
   {
+    img: path,
+    url: "https://open.spotify.com/track/7M84THJ06PN0VFul8ukDB4?si=899f3c060da1429a",
+    fresh: true,
+  },
+  {
     img: cast,
     url: "https://open.spotify.com/track/2Ol0DAoXg8unquwUAyFA01?si=34537afeaeb4459d",
-    fresh: true,
   },
   {
     img: amaatOne,
@@ -50,7 +55,7 @@ export default function Releases({ displayNumber }: { displayNumber: number }) {
                 <div className="--hover-img relative">
                   <Image src={img} alt="an album cover" placeholder="blur" />
                   {fresh && (
-                    <div className="absolute left-0 bottom-0 px-3 py-1 text-white text-xs">
+                    <div className="absolute left-0 bottom-0 px-3 py-2 text-white text-xs">
                       new single out everywhere :)
                     </div>
                   )}
