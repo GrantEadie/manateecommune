@@ -2,6 +2,7 @@ import Image from "next/image";
 import amaatOne from "../../public/amaat one cover.jpeg";
 import cast from "../../public/cast_artwork_reduced.jpeg";
 import path from "../../public/path.jpeg";
+import faulted from "../../public/faulted_artwork_(single).jpg"
 import crescentLake from "../../public/crescent_lake_cover.jpeg";
 import pda from "../../public/pda_artwork.jpeg";
 import unmastered from "../../public/unmastered_artwork.jpeg";
@@ -10,9 +11,13 @@ import thistle from "../../public/thistle_album_art.jpeg";
 
 export const releasesData = [
   {
-    img: path,
+    img: faulted,
     url: "https://open.spotify.com/track/7M84THJ06PN0VFul8ukDB4?si=899f3c060da1429a",
     fresh: true,
+  },
+  {
+    img: path,
+    url: "https://open.spotify.com/track/7M84THJ06PN0VFul8ukDB4?si=899f3c060da1429a",
   },
   {
     img: cast,

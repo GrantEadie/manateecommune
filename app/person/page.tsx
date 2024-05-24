@@ -1,5 +1,5 @@
 import Image from "next/image";
-import manatee from "../../public/03a.jpg";
+import manatee from "../../public/mc website headshot.jpeg";
 
 export default function PersonPage() {
   return (
