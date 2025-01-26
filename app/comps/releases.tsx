@@ -8,8 +8,19 @@ import pda from "../../public/pda_artwork.jpeg";
 import unmastered from "../../public/unmastered_artwork.jpeg";
 import selfTitled from "../../public/self_titled_artwork.jpeg";
 import thistle from "../../public/thistle_album_art.jpeg";
+import simultaneity from "../../public/simultaneity cover.jpg";
+import mosaic from "../../public/mosaic cover.jpg";
 
 export const releasesData = [
+  {
+    img: simultaneity,
+    url: "https://open.spotify.com/album/1yu1k84kwKuvitIhnyQCUf?si=7d2cb2c37f69464d",
+    fresh: true,
+  },
+  {
+    img: mosaic,
+    url: "https://open.spotify.com/album/1yu1k84kwKuvitIhnyQCUf?si=7d2cb2c37f69464d",
+  },
   {
     img: faulted,
     url: "https://open.spotify.com/track/7M84THJ06PN0VFul8ukDB4?si=899f3c060da1429a",
@@ -61,7 +72,7 @@ export default function Releases({ displayNumber }: { displayNumber: number }) {
                   <Image src={img} alt="an album cover" placeholder="blur" />
                   {fresh && (
                     <div className="absolute left-0 bottom-0 px-3 py-2 text-white text-xs">
-                      new single out everywhere :)
+                      new album out everywhere :)
                     </div>
                   )}
                 </div>

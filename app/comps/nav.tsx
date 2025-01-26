@@ -4,7 +4,7 @@ import Link from "next/link";
 import { space } from "../fonts";
 import { AnimatePresence, motion, useCycle } from "framer-motion";
 import Burger from "./burger";
-import manateeCommune from "../../public/manatee-commune.svg";
+import manateeCommune from "../../public/manatee commune logo 2024.svg";
 import Image from "next/image";
 
 const routes = ["live", "releases", "person"];
